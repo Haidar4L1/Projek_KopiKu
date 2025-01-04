@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFB77E">
+
+    <!-- Latar atas -->
+
+    <!-- judul -->
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="900dp"
+        android:layout_height="900dp"
+        android:layout_marginTop="-70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.156"
+        app:srcCompat="@drawable/bg_panjang" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="209dp"
+        android:layout_height="32dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/cofeemu"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <!-- Searchbar -->
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="364dp"
+        android:layout_height="42dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/bg_bulat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <!-- Kategori Tombol -->
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.238">
+
+    </LinearLayout>
+
+    <!-- Card untuk Item Kopi -->
+
+    <Button
+        android:id="@+id/btn_semua"
+        android:layout_width="93dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="48dp"
+        android:backgroundTint="#D9CBCB"
+        android:text="Semua"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_pahit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.212" />
+
+    <Button
+        android:id="@+id/btn_manis"
+        android:layout_width="92dp"
+        android:layout_height="53dp"
+        android:backgroundTint="#D9CBCB"
+        android:text="Manis"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/card_coffee"
+        app:layout_constraintEnd_toStartOf="@+id/btn_pahit"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toEndOf="@+id/btn_semua"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.855" />
+
+    <Button
+        android:id="@+id/btn_pahit"
+        android:layout_width="94dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#D9CBCB"
+        android:text="Pahit"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/card_coffee"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.796" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_coffee"
+        android:layout_width="330dp"
+        android:layout_height="352dp"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_semua"
+        app:layout_constraintVertical_bias="0.188">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="346dp">
+
+            <!-- Gambar Kopi -->
+
+            <!-- Nama Kopi -->
+
+            <!-- Harga Kopi -->
+
+            <ImageView
+                android:id="@+id/iv_coffee"
+                android:layout_width="215dp"
+                android:layout_height="222dp"
+                android:layout_marginTop="28dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/es_kopi"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.177" />
+
+            <TextView
+                android:id="@+id/tv_coffee_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Iced Americano With Milk"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_coffee"
+                app:layout_constraintVertical_bias="0.128" />
+
+            <TextView
+                android:id="@+id/tv_coffee_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Rp: 55.000"
+                android:textColor="#888888"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_coffee_name" />
+
+            <!-- Tombol Tambahkan -->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ECB176"
+        android:text="BELI"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_coffee"
+        app:layout_constraintVertical_bias="0.247" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">KopiKu</string>
+    <string name="login">Login</string>
+    <string name="nama_user">Masukan Username</string>
+    <string name="password">Masukan Password</string>
+    <string name="cofeemu">Cari Cofeemu...</string>
+    <string name="bikin_akun">Buat Account</string>
+</resources>
